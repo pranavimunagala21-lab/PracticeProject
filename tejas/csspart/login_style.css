@@ -1,0 +1,122 @@
+/* ==============================================
+   Base and Utilities
+   ============================================== */
+:root {
+    --color-dark-bg: #0A0A0A;      /* Deep Black background */
+    --color-card-bg: #1C1C1C;      /* Darker Grey for panels/cards */
+    --color-text-light: #FFF;
+    --color-text-medium: #AAA;
+    
+    --color-primary-green: #00FF00;  /* Vibrant Green (Logo) */
+    --color-primary-blue: #00BFFF;   /* Bright Blue (Button/Primary Action) */
+}
+
+body {
+    background-color: var(--color-dark-bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color-text-light);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px; /* Standard mobile app width constraint */
+    padding: 20px;
+}
+
+/* ==============================================
+   Logo and Tagline
+   ============================================== */
+.logo-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--color-primary-green);
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 16px;
+    color: var(--color-text-medium);
+    font-style: italic;
+    margin: 0;
+}
+
+/* ==============================================
+   Form Elements
+   ============================================== */
+.login-form {
+    background-color: var(--color-dark-bg);
+    padding: 20px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    color: var(--color-text-light);
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-field {
+    width: 100%;
+    background-color: var(--color-card-bg);
+    color: var(--color-text-light);
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+/* Style placeholder text */
+.input-field::placeholder {
+    color: #777;
+}
+
+/* ==============================================
+   Buttons and Links
+   ============================================== */
+.login-button {
+    width: 100%;
+    background-color: var(--color-primary-blue);
+    color: var(--color-text-light);
+    padding: 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.login-button:hover {
+    background-color: #0099cc; /* Slightly darker blue on hover */
+}
+
+.forgot-password-link {
+    display: block;
+    text-align: center;
+    color: var(--color-text-medium);
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.forgot-password-link:hover {
+    color: var(--color-text-light);
+}

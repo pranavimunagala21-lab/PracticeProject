@@ -1,0 +1,140 @@
+:root {
+    --color-dark-bg: #0A0A0A;
+    --color-card-bg: #1C1C1C;
+    --color-text-light: #FFF;
+    --color-text-medium: #AAA;
+    --color-primary-green: #00FF00;
+    --color-primary-yellow: #FFD700;
+    --color-accent-blue: #00BFFF;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-dark-bg);
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--color-text-light);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 24px 20px;
+    background-color: #111;
+    border-bottom: 1px solid var(--color-card-bg);
+}
+
+.page-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.subtitle {
+    margin: 4px 0 0;
+    color: var(--color-text-medium);
+    font-size: 14px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.signal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.signal-item {
+    background-color: var(--color-card-bg);
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-left: 4px solid #333;
+}
+
+.signal-item.status-green {
+    border-left-color: var(--color-primary-green);
+}
+
+.signal-item.status-yellow {
+    border-left-color: var(--color-primary-yellow);
+}
+
+.signal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.signal-name {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.signal-badge {
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.badge-green {
+    background-color: rgba(0, 255, 0, 0.1);
+    color: var(--color-primary-green);
+}
+
+.badge-yellow {
+    background-color: rgba(255, 215, 0, 0.1);
+    color: var(--color-primary-yellow);
+}
+
+.ai-reason-box {
+    background-color: #252525;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.ai-label {
+    display: block;
+    color: var(--color-text-medium);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.ai-text {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #EEE;
+}
+
+.footer {
+    padding: 20px;
+    background-color: var(--color-dark-bg);
+    border-top: 1px solid var(--color-card-bg);
+}
+
+.back-button {
+    width: 100%;
+    padding: 14px;
+    background-color: transparent;
+    border: 1px solid var(--color-card-bg);
+    color: var(--color-text-light);
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: var(--color-card-bg);
+}

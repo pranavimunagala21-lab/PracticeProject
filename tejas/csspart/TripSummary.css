@@ -1,0 +1,156 @@
+:root {
+    --color-dark-bg: #0A0A0A;
+    --color-card-bg: #1C1C1C;
+    --color-text-light: #FFF;
+    --color-text-medium: #AAA;
+    --color-primary-green: #00FF00;
+    --color-primary-blue: #00BFFF;
+    --color-accent-purple: #9D00FF;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-dark-bg);
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--color-text-light);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 28px;
+    background: -webkit-linear-gradient(#eee, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    margin: 8px 0 0;
+    color: var(--color-primary-green);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.score-card {
+    background: linear-gradient(145deg, #1a1a1a, #222);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #333;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.score-label {
+    display: block;
+    color: var(--color-text-medium);
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.score-value {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--color-primary-blue);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.metric-item {
+    background-color: var(--color-card-bg);
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.metric-label {
+    display: block;
+    color: var(--color-text-medium);
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.metric-value {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.text-green {
+    color: var(--color-primary-green);
+}
+
+.route-card {
+    background-color: var(--color-card-bg);
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.route-label {
+    display: block;
+    color: var(--color-text-medium);
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.route-value {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.efficiency-badge {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 4px 10px;
+    background-color: rgba(0, 255, 0, 0.1);
+    color: var(--color-primary-green);
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.footer {
+    padding: 20px;
+    border-top: 1px solid var(--color-card-bg);
+}
+
+.primary-button {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--color-primary-blue);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.primary-button:active {
+    transform: scale(0.98);
+}

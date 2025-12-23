@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickup Confirmation - Green Corridor</title>
+    <link rel="stylesheet" href="../csspart/PickupConfirmation.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div>
+                <h1 class="driver-name">Driver: Ravi Kumar</h1>
+                <p class="ambulance-id">Ambulance ID: A47B-GCS</p>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="confirmation-card">
+                <h2 class="title">Confirm Pickup</h2>
+                <div class="patient-check">
+                    <label class="toggle-label">
+                        <span class="label-text">Patient On Board</span>
+                        <input type="checkbox" id="patientToggle" class="toggle-input">
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+                <p id="instructionText" class="instruction">Please verify patient is safely secured before proceeding.
+                </p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <button id="startRouteBtn" class="action-button" disabled>Start Hospital Route</button>
+        </footer>
+    </div>
+
+    <script src="../jspart/PickupConfirmation.js"></script>
+</body>
+
+</html>

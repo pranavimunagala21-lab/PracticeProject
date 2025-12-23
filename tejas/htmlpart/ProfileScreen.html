@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Profile - Green Corridor</title>
+    <link rel="stylesheet" href="../csspart/ProfileScreen.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="page-title">Driver Profile</h1>
+            <a href="DashboardScreen.html" class="close-link">✕</a>
+        </header>
+
+        <main class="content">
+            <section class="profile-card">
+                <div class="avatar-circle">RK</div>
+                <h2 class="driver-name">Ravi Kumar</h2>
+                <p class="role-text">Senior Ambulance Pilot</p>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="label">Ambulance ID</span>
+                        <span class="value">A47B-GCS</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Experience</span>
+                        <span class="value">5 Years</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Total Trips</span>
+                        <span class="value">1,248</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Rating</span>
+                        <span class="value">4.9 ★</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="history-section">
+                <h3 class="section-title">Recent Trips</h3>
+                <ul class="history-list">
+                    <li class="history-item">
+                        <div class="trip-info">
+                            <span class="trip-dest">City Hospital</span>
+                            <span class="trip-date">Today, 10:30 AM</span>
+                        </div>
+                        <span class="trip-status status-critical">Critical</span>
+                    </li>
+                    <li class="history-item">
+                        <div class="trip-info">
+                            <span class="trip-dest">Heart Center</span>
+                            <span class="trip-date">Yesterday, 4:15 PM</span>
+                        </div>
+                        <span class="trip-status status-high">High</span>
+                    </li>
+                    <li class="history-item">
+                        <div class="trip-info">
+                            <span class="trip-dest">Trauma Care Unit</span>
+                            <span class="trip-date">Dec 10, 09:00 AM</span>
+                        </div>
+                        <span class="trip-status status-critical">Critical</span>
+                    </li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <button id="logoutBtn" class="logout-button">Logout</button>
+        </footer>
+    </div>
+
+    <script src="../jspart/ProfileScreen.js"></script>
+</body>
+
+</html>

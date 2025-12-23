@@ -1,0 +1,172 @@
+:root {
+    --color-dark-bg: #0A0A0A;
+    --color-card-bg: #1C1C1C;
+    --color-text-light: #FFF;
+    --color-text-medium: #AAA;
+    --color-primary-green: #00FF00;
+    --color-alert-red: #FF4444;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-dark-bg);
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--color-text-light);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.page-title {
+    margin: 0;
+    font-size: 20px;
+}
+
+.close-link {
+    color: var(--color-text-medium);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.profile-card {
+    background-color: var(--color-card-bg);
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.avatar-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-text-medium);
+    border: 2px solid var(--color-primary-green);
+}
+
+.driver-name {
+    margin: 0;
+    font-size: 22px;
+}
+
+.role-text {
+    margin: 4px 0 20px;
+    color: var(--color-text-medium);
+    font-size: 14px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    text-align: left;
+}
+
+.info-item {
+    background-color: #252525;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.label {
+    display: block;
+    color: var(--color-text-medium);
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+
+.value {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history-item {
+    background-color: var(--color-card-bg);
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trip-dest {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.trip-date {
+    color: var(--color-text-medium);
+    font-size: 12px;
+}
+
+.trip-status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.status-critical {
+    background-color: rgba(255, 68, 68, 0.1);
+    color: var(--color-alert-red);
+}
+
+.status-high {
+    background-color: rgba(255, 140, 0, 0.1);
+    color: #FF8C00;
+}
+
+.footer {
+    padding: 20px;
+}
+
+.logout-button {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--color-alert-red);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}

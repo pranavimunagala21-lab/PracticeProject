@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incoming Emergency Request</title>
+    <link rel="stylesheet" href="../csspart/IncomingRequest.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div>
+                <h1 class="title">Incoming Emergency</h1>
+                <p class="subtitle">Green Corridor System</p>
+            </div>
+            <a href="DashboardScreen.html" class="back-link">← Dashboard</a>
+        </header>
+
+        <section class="card">
+            <div class="row">
+                <span class="label">Patient Pickup</span>
+                <span id="pickupLocation" class="value">Central Plaza, Gate 3</span>
+            </div>
+            <div class="row">
+                <span class="label">Destination Hospital</span>
+                <span id="destinationHospital" class="value">City Hospital - Trauma Wing</span>
+            </div>
+            <div class="row">
+                <span class="label">Distance</span>
+                <span id="distance" class="value">3.2 km</span>
+            </div>
+            <div class="row">
+                <span class="label">ETA</span>
+                <span id="eta" class="value">7 min</span>
+            </div>
+            <div class="row level-row">
+                <span class="label">Emergency Level</span>
+                <span id="levelBadge" class="badge badge-critical">Critical</span>
+            </div>
+        </section>
+
+        <section class="timer-card">
+            <p id="timerText" class="timer-text">Auto-rejecting in 20s</p>
+            <div class="timer-bar">
+                <div id="timerFill" class="timer-fill"></div>
+            </div>
+        </section>
+
+        <section class="actions">
+            <button id="rejectBtn" class="ghost-button">Reject</button>
+            <button id="acceptBtn" class="primary-button">Accept</button>
+        </section>
+    </div>
+
+    <script src="../jspart/IncomingRequest.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Green Corridor</title>
+    <link rel="stylesheet" href="../csspart/SettingsScreen.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="page-title">Settings</h1>
+            <a href="DashboardScreen.html" class="close-link">Back</a>
+        </header>
+
+        <main class="content">
+            <section class="settings-group">
+                <h2 class="group-title">Notifications</h2>
+                <div class="setting-item">
+                    <span class="setting-label">Push Notifications</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <span class="setting-label">Sound Alerts</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <span class="setting-label">Vibration</span>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </section>
+
+            <section class="settings-group">
+                <h2 class="group-title">Appearance</h2>
+                <div class="setting-item">
+                    <span class="setting-label">Dark Mode</span>
+                    <label class="switch">
+                        <input type="checkbox" checked disabled>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div class="setting-item">
+                    <span class="setting-label">Language</span>
+                    <select class="select-input">
+                        <option value="en">English</option>
+                        <option value="hi">Hindi</option>
+                        <option value="mr">Marathi</option>
+                    </select>
+                </div>
+            </section>
+
+            <section class="settings-group">
+                <h2 class="group-title">Emergency Support</h2>
+                <div class="info-card">
+                    <h3 class="info-title">🚑 Operating Instructions</h3>
+                    <p class="info-text">
+                        1. <strong>Green Corridor Mode</strong> activates automatically upon request acceptance.<br>
+                        2. Maintain steady speed within 40-60 km/h for optimal signal syncing.<br>
+                        3. In case of signal failure, use manual override siren/lights as per protocol DOT-55.<br>
+                        4. <strong>Red Button</strong> trigger is available on dashboard for panic situations.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../jspart/SettingsScreen.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Green Corridor</title>
+    <link rel="stylesheet" href="../csspart/login_style.css"> 
+</head>
+<body>
+    <div class="container">
+        <header class="logo-section">
+            <h1 class="logo-text">🚑 Ambulance Driver</h1>
+            <h2 class="tagline">"Saving minutes, saving lives."</h2>
+        </header>
+
+        <main class="login-form">
+            <div class="form-group">
+                <label for="phone" class="label">Phone Number</label>
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    class="input-field" 
+                    placeholder="e.g., 9876543210" 
+                    maxlength="10"
+                    required
+                >
+            </div>
+
+            <div class="form-group otp-group" style="display: none;">
+                <label for="otp" class="label">Enter OTP</label>
+                <input 
+                    type="number" 
+                    id="otp" 
+                    class="input-field" 
+                    placeholder="4-digit code" 
+                    maxlength="4"
+                >
+            </div>
+            
+            <button id="loginButton" class="login-button">
+                Send OTP
+            </button>
+
+            <a href="#" class="forgot-password-link">Forgot password?</a>
+        </main>
+    </div>
+
+    <script src="../jspart/login.js"></script>
+</body>
+</html>

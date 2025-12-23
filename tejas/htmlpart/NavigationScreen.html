@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation - Green Corridor</title>
+    <link rel="stylesheet" href="../csspart/Navigation.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div>
+                <h1 class="driver-name">Driver: Ravi Kumar</h1>
+                <p class="ambulance-id">Ambulance ID: A47B-GCS</p>
+            </div>
+            <a href="DashboardScreen.html" class="back-link">← Dashboard</a>
+        </header>
+
+        <section class="alert-banner">
+            <p id="alertText">🚨 Traffic Density Alert: High volume near Central Plaza.</p>
+        </section>
+
+        <main class="map-container">
+            <img src="../images/map_bg.png" alt="Real-time Map" class="map-image">
+            <div class="map-overlay">
+                <!-- Overlay elements can go here if needed, e.g. floating markers -->
+            </div>
+        </main>
+
+        <section class="signal-status-card">
+            <div>
+                <p id="signalLabel" class="signal-label">Next Signal in: 200m</p>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <p id="signalStatus" class="signal-status">→ Will turn GREEN</p>
+                    <a href="SignalDetails.html"
+                        style="color: var(--color-primary-blue); font-size: 12px; text-decoration: none;">(View
+                        Details)</a>
+                </div>
+            </div>
+            <button id="refreshButton" class="ghost-button">Refresh</button>
+        </section>
+
+        <section class="bottom-panel">
+            <div class="info-row">
+                <span class="info-label">Distance to Patient</span>
+                <span id="distanceValue" class="info-value">1.8 km</span>
+            </div>
+            <div class="info-row">
+                <span class="info-label">ETA</span>
+                <span id="etaValue" class="info-value info-value-eta">4 min</span>
+            </div>
+            <button id="startPickup" class="action-button">Start Pickup (Arrived)</button>
+        </section>
+    </div>
+
+    <script src="../jspart/navigation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Dashboard - Green Corridor</title>
+    <link rel="stylesheet" href="../csspart/DashBoard.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="driver-info">
+                <h1>Driver: **Ravi Kumar**</h1>
+                <p>Ambulance ID: **A47B-GCS**</p>
+            </div>
+            <div style="display: flex; gap: 15px;">
+                <a href="SettingsScreen.html" style="color: #AAA; text-decoration: none; font-size: 20px;">⚙️</a>
+                <a href="ProfileScreen.html" class="profile-link">Profile</a>
+            </div>
+        </header>
+
+        <section class="status-panel">
+            <span id="statusText" class="status-text offline-color">OFFLINE</span>
+            <div id="statusToggle" class="status-toggle" data-status="offline"></div>
+        </section>
+
+        <section id="mainStatusCard" class="main-status-card offline-card">
+            <p id="mainStatusText" class="main-status-text">Go Online to Accept Requests</p>
+        </section>
+
+        <main class="map-container" id="dashboardMap">
+            <img src="../images/map_bg.png" alt="Driver Location" class="map-image">
+            <div class="map-overlay">
+                <div class="driver-marker" id="driverMarker">🚑</div>
+                <div class="map-controls">
+                    <span class="control-btn">+</span>
+                    <span class="control-btn">-</span>
+                </div>
+            </div>
+        </main>
+
+        <footer class="stats-bar">
+            <div class="stat-item">
+                <p class="stat-label">Trips Today</p>
+                <p class="stat-value">12</p>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+                <p class="stat-label">Priority Level</p>
+                <p class="stat-value stat-value-critical">5 (Highest)</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../jspart/dashboard.js"></script>
+</body>
+
+</html>
